@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} About Worker {% endblock %}
+
+{% block content %}
+
+{% if manager_name is not None %}
+  <h1> Manager - {{ manager_name }} </h1>
+{% else %}
+  <h1> We can't find out who is the manager =( </h1>
+{% endif %}
+<h2> Worker Experience - {{ worker.experience }} </h2>
+
+{% endblock %}
